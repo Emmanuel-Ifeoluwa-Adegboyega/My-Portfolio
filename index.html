@@ -1,358 +1,259 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>YouTube.com Clone</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<html lang="en-uk">
 
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="icons/youtube-logo.svg">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Website Design Using HTML and CSS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+
+<body>
+
+  <section id="header">
+    <div class="container">
+      <img class="logo" src="images/logo.png" alt="">
+      <div class="header-text">
+        <h1>The purpose is to <br> teach, bring learning to people</h1>
+        <span class="square"></span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, odio quidem nam atque consequatur tempora maxime? Eos explicabo possimus voluptas rerum placeat amet. Similique dolores iste corrupti facilis a quaerat.</p>
+        <button class="common-btn">Read More</button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
       </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="icons/search.svg">
-          <div class="tooltip">Search</div>
-        </button>
-        <!-- Put position absolute inside position relative -->
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
+    </div>
+  </section>
+
+  <nav id="sideNav">
+    <ul>
+      <li><a href="#header">HOME</a></li>
+      <li><a href="#about">ABOUT US</a></li>
+      <li><a href="#features">FEATURES</a></li>
+      <li><a href="#courses">COURSES</a></li>
+      <li><a href="#offer">OFFER</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <img id="menuBtn" src="images/menu.png" alt="">
+
+
+ <!-- About -->
+
+ <section id="about">
+  <div class="about-left-col">
+    <img src="images/about.png" alt="">
+  </div>
+  <div class="about-right-col">
+    <div class="about-text">
+      <h1>About Us</h1>
+      <span class="square"></span>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam enim unde, eveniet nulla magni neque temporibus, earum quis libero vel beatae aliquid suscipit voluptatibus assumenda voluptatum, quod modi accusamus aliquam.
+      Dolores architecto laborum m</p><br><br>
+
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
       </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="icons/upload.svg">
-          <div class="tooltip">Create</div>
+
+      <h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia consequatur illum obcaecati. Dolorem soluta, explicabo tenetur quis in of" <br> ---Emmanuel Ifeoluwa Adegboyega</h3>
+
+    </div>
+  </div>
+ </section>
+
+
+
+ <!-- Features -->
+
+
+ <section id="features">
+
+  <div class="features-row">
+    <div class="features-col">
+      <img src="images/pic-1.png" alt="">
+      <h4>Learn Anywhere</h4>
+      <p>Lorem ipsum, dolor sit am, delectus laboriosam?</p>
+    </div>
+    <div class="features-col">
+      <img src="images/pic-2.png" alt="">
+      <h4>Expert Teachers</h4>
+      <p>Lorem ipsum, dolor sit am, delectus laboriosam?</p>
+    </div>
+    <div class="features-col">
+      <img src="images/pic-3.png" alt="">
+      <h4>I Enjoy Coding</h4>
+      <p>Lorem ipsum, dolor sit am, delectus laboriosam?</p>
+    </div>
+  </div>
+
+  <div class="features-btn">
+      
+    <div class="line">
+      <span class="line-1"></span><br>
+      <span class="line-2"></span><br>
+      <span class="line-3"></span>
+    </div>
+    <button class="common-btn">Start Free Trial</button>
+  </div>
+  
+ </section>
+
+
+ <!-- COURSES -->
+
+<section id="courses">
+
+  <div class="container course-row">
+    <div class="course-left-col">
+      <div class="course-text">
+        <h1>Browse Our Top <br> Courses</h1>
+        <span class="square"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque et debitis quod amet, odit commodi totam deserunt sequi illum rerum error quaerat, ipsum ipsa minus tempore! Officia, repellendus explicabo!</p>
+        <button class="common-btn">View All Courses</button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
         </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-          <div class="tooltip">YouTube Apps</div>
-        </div>
-        <div class="notifications-icon-container">
-          <img class="notifications-icon" src="icons/notifications.svg">
-          <div class="notifications-count">3</div>
-          <div class="tooltip">Notifications</div>
-        </div>
-        <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
       </div>
-    </header>
+    </div>
+    <div class="course-right-col">
+      <img src="images/course.png" alt="">
+    </div>
+  </div>
+  
+</section>
 
-    <nav class="sidebar">
-      <div class="sidebar-link">
-        <img src="icons/home.svg">
-        <div>Home</div>
+
+<!-- OFFER -->
+
+
+<section id="offer">
+  <div class="about-left-col">
+    <img src="images/offer.png" alt="">
+  </div>
+  <div class="about-right-col">
+    <div class="about-text">
+      <h1>Limitless learning, <br> limitless possibilities</h1>
+      <span class="square"></span>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam enim unde, eveniet nulla magni neque temporibus, earum quis libero vel beatae aliquid suscipit </p>
+
+      <button class="common-btn">Start Free Trial</button>
+
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/explore.svg">
-        <div>Explore</div>
+
+      <h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia consequatur illum obcaecati. Dolorem soluta, explicabo tenetur quis in of" <br> ---Emmanuel Ifeoluwa Adegboyega</h3>
+
+    </div>
+  </div>
+ </section>
+
+
+
+ <!-- CONTACT -->
+
+ <section id="contact">
+  <div class="container contact-row">
+    <div class="contact-left-col">
+      <H1>Sign Up to Join Our <br> Learning Community</H1>
+      <form action="">
+        <input type="text" placeholder="Enter Your Name">
+        <input type="email" placeholder="Enter Your Email">
+        <input type="password" placeholder="Enter Your Password">
+        <div class="btn-box">
+          <button class="common-btn">Sign Up</button>
+          <button class="common-btn">Start Free Trial</button>
+        </div>
+      </form>
+
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/subscriptions.svg">
-        <div>Subscriptions</div>
+
+    </div>
+    <div class="contact-right-col">
+      <img src="images/contact.png" alt="">
+    </div>
+  </div>
+ </section>
+
+
+<!-- Footer -->
+
+<section id="footer">
+  <div class="container footer-row">
+    <hr>
+    <div class="footer-left-col">
+      <div class="footer-links">
+        <div class="link-title">
+          <h4>Product</h4>
+          <small>Our Plan</small><br>
+          <small>Free Trial</small>
+        </div>
+        <div class="link-title">
+          <h4>About Us</h4>
+          <small>Request Demo</small><br>
+          <small>FAQs</small>
+        </div>
+        <div class="link-title">
+          <h4>Support</h4>
+          <small>Features</small><br>
+          <small>Contact Us</small>
+        </div>
+        <div class="link-title">
+          <h4>Explore</h4>
+          <small>Find a non-profit</small><br>
+          <small>Coporate Solution</small>
+        </div>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/originals.svg">
-        <div>Originals</div>
+    </div>
+
+    <div class="footer-right-col">
+      <div class="footer-info">
+        <div class="copyright-text">
+          <small>support@emmanuelifeoluwa.com</small><br>
+          <small>All rights reserved 2022</small>
+        </div>
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="">
+          <button class="common-btn">English</button>
+        </div>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/youtube-music.svg">
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/library.svg">
-        <div>Library</div>
-      </div>
-    </nav>
+    </div>
+  </div>
+</section>
 
-    <main>
-      <section class="video-grid">
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-            <div class="video-time">14:20</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-              </p>
-              <p class="video-author">
-                Marques Brownlee
-              </p>
-              <p class="video-stats">
-                3.4M views &#183; 6 months ago
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-            <div class="video-time">8:22</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Try Not To Laugh Challenge #9
-              </p>
-              <p class="video-author">
-                Markiplier
-              </p>
-              <p class="video-stats">
-                19M views &#183; 4 years ago
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
-            <div class="video-time">9:13</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Crazy Tik Toks Taken Moments Before DISASTER
-              </p>
-              <p class="video-author">
-                SSSniperWolf
-              </p>
-              <p class="video-stats">
-                12M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
+<!-- SOCIAL ICONS -->
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
-            <div class="video-time">22:09</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                The Simplest Math Problem No One Can Solve - Collatz Conjecture
-              </p>
-              <p class="video-author">
-                Veritasium
-              </p>
-              <p class="video-stats">
-                18M views &#183; 4 months ago
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
-            <div class="video-time">11:17</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Kadane's Algorithm to Maximum Sum Subarray Problem
-              </p>
-              <p class="video-author">
-                CS Dojo
-              </p>
-              <p class="video-stats">
-                519K views &#183; 5 years ago
-              </p>
-            </div>
-          </div>
-        </div>
+<div class="social-icons">
+  <img src="images/facebook.png" alt="">
+  <img src="images/twitter.png" alt="">
+  <img src="images/instagram.png" alt="">
+  <img src="images/linkedin.png" alt="">
+</div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
-            <div class="video-time">19:59</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Anything You Can Fit In The Circle I’ll Pay For
-              </p>
-              <p class="video-author">
-                MrBeast
-              </p>
-              <p class="video-stats">
-                141M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
-            <div class="video-time">10:13</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Why Planes Don't Fly Over Tibet
-              </p>
-              <p class="video-author">
-                RealLifeLore
-              </p>
-              <p class="video-stats">
-                6.6M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
-            <div class="video-time">7:12</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-8.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Inside The World's Biggest Passenger Plane
-              </p>
-              <p class="video-author">
-                Tech Vision
-              </p>
-              <p class="video-stats">
-                3.7M views &#183; 10 months ago
-              </p>
-            </div>
-          </div>
-        </div>
+  <script src="main.js"></script>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
-            <div class="video-time">13:17</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-9.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                The SECRET to Super Human STRENGTH
-              </p>
-              <p class="video-author">
-                ThenX
-              </p>
-              <p class="video-stats">
-                20M views &#183; 3 years ago
-              </p>
-            </div>
-          </div>
-        </div>
+</body>
 
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
-            <div class="video-time">7:53</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-10.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
-              </p>
-              <p class="video-author">
-                Business Insider
-              </p>
-              <p class="video-stats">
-                14M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
-            <div class="video-time">4:10</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-11.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Dubai's Crazy Underwater Train and Other Things #Only in Dubai
-              </p>
-              <p class="video-author">
-                Destination Tips
-              </p>
-              <p class="video-stats">
-                3M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
-            <div class="video-time">4:51</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                What would happen if you didn’t drink water? - Mia Nacamulli
-              </p>
-              <p class="video-author">
-                TED-Ed
-              </p>
-              <p class="video-stats">
-                12M views &#183; 5 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
